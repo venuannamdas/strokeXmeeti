@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_efa0f967d57318c67dd1956a60c61f28 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_efa0f967d57318c67dd1956a60c61f28" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_efa0f967d57318c67dd1956a60c61f28 = L.map(
+                "map_efa0f967d57318c67dd1956a60c61f28",
+                {
+                    center: [48.206856900000005, 16.36733935],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_424e244d889be177f0fe1b0c276fdf8c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+            var marker_cb99b4139f2f924998bf1de9c2f165a4 = L.marker(
+                [48.20849, 16.37208],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_78bf8f67dc43fb4116c0aa6d97fcf606 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_827410d68c3fd06df4f4781167b48bb1 = $(`<div id="html_827410d68c3fd06df4f4781167b48bb1" style="width: 100.0%; height: 100.0%;"><b>Albertina Museum, Vienna, Austria</b><br>Total Stroke Cases at This Place: 16<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>9</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>7</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>16.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>10.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>13</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>3</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>3</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_78bf8f67dc43fb4116c0aa6d97fcf606.setContent(html_827410d68c3fd06df4f4781167b48bb1);
+            
+        
+
+        marker_cb99b4139f2f924998bf1de9c2f165a4.bindPopup(popup_78bf8f67dc43fb4116c0aa6d97fcf606)
+        ;
+
+        
+    
+    
+            var marker_84f47b216e30a3c1df06f04a7f32bd10 = L.marker(
+                [48.1910716, 16.3797606],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_a339695060bf7e289304574b8ad380f4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4bd30a7dcce6664f306cbc2fd121cffb = $(`<div id="html_4bd30a7dcce6664f306cbc2fd121cffb" style="width: 100.0%; height: 100.0%;"><b>Belvedere Palace, Vienna, Austria</b><br>Total Stroke Cases at This Place: 12<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>5.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>6</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>1</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_a339695060bf7e289304574b8ad380f4.setContent(html_4bd30a7dcce6664f306cbc2fd121cffb);
+            
+        
+
+        marker_84f47b216e30a3c1df06f04a7f32bd10.bindPopup(popup_a339695060bf7e289304574b8ad380f4)
+        ;
+
+        
+    
+    
+            var marker_9f80095cd2cd941546c47a2e174ff696 = L.marker(
+                [48.2090711, 16.3690528],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_c28594f21beee8aab651e091e2a191cf = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c9609732f6efa0bfb02d447dabb26f40 = $(`<div id="html_c9609732f6efa0bfb02d447dabb26f40" style="width: 100.0%; height: 100.0%;"><b>Graben, Vienna, Austria</b><br>Total Stroke Cases at This Place: 10<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>7</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>6</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>4</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>2</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_c28594f21beee8aab651e091e2a191cf.setContent(html_c9609732f6efa0bfb02d447dabb26f40);
+            
+        
+
+        marker_9f80095cd2cd941546c47a2e174ff696.bindPopup(popup_c28594f21beee8aab651e091e2a191cf)
+        ;
+
+        
+    
+    
+            var marker_e0de394648f9559047f777f2ad9921e3 = L.marker(
+                [48.1972764, 16.3540014],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_aa8c7527f40d141f11b553de50659ab7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bade27c0f7669a6118cc214260b55a6b = $(`<div id="html_bade27c0f7669a6118cc214260b55a6b" style="width: 100.0%; height: 100.0%;"><b>Haus des Meeres, Vienna, Austria</b><br>Total Stroke Cases at This Place: 7<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>4</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>7.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>2</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>1</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_aa8c7527f40d141f11b553de50659ab7.setContent(html_bade27c0f7669a6118cc214260b55a6b);
+            
+        
+
+        marker_e0de394648f9559047f777f2ad9921e3.bindPopup(popup_aa8c7527f40d141f11b553de50659ab7)
+        ;
+
+        
+    
+    
+            var marker_270340b8d3dffc8ad6d219dbdf55b9c1 = L.marker(
+                [48.2060921, 16.3640091],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_61749226bace0c2dc055f329c04e1717 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e0f1b20f155ad11190324d7aec8a154d = $(`<div id="html_e0f1b20f155ad11190324d7aec8a154d" style="width: 100.0%; height: 100.0%;"><b>Heldenplatz, Vienna, Austria</b><br>Total Stroke Cases at This Place: 8<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>4</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>8.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>5.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>6</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>4</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_61749226bace0c2dc055f329c04e1717.setContent(html_e0f1b20f155ad11190324d7aec8a154d);
+            
+        
+
+        marker_270340b8d3dffc8ad6d219dbdf55b9c1.bindPopup(popup_61749226bace0c2dc055f329c04e1717)
+        ;
+
+        
+    
+    
+            var marker_f111e1710b242d30d8f6deb2a3055902 = L.marker(
+                [48.2063294, 16.3656259],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_20a446a364a11780e2d6531f6f6fffb1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c352bdc0430887d80aa7b72e650869cb = $(`<div id="html_c352bdc0430887d80aa7b72e650869cb" style="width: 100.0%; height: 100.0%;"><b>Hofburg Palace, Vienna, Austria</b><br>Total Stroke Cases at This Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>13.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>10.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>8</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>7.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>5.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>0.0</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_20a446a364a11780e2d6531f6f6fffb1.setContent(html_c352bdc0430887d80aa7b72e650869cb);
+            
+        
+
+        marker_f111e1710b242d30d8f6deb2a3055902.bindPopup(popup_20a446a364a11780e2d6531f6f6fffb1)
+        ;
+
+        
+    
+    
+            var marker_b6f569a9d375d96308d0121ff3f614b1 = L.marker(
+                [48.2073844, 16.3939411],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_993f134b3106fc48f5d5626a1ede394b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fdbeb95d519526c43569863db515994d = $(`<div id="html_fdbeb95d519526c43569863db515994d" style="width: 100.0%; height: 100.0%;"><b>Hundertwasserhaus, Vienna, Austria</b><br>Total Stroke Cases at This Place: 9<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>4</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>8</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>4.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>2</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_993f134b3106fc48f5d5626a1ede394b.setContent(html_fdbeb95d519526c43569863db515994d);
+            
+        
+
+        marker_b6f569a9d375d96308d0121ff3f614b1.bindPopup(popup_993f134b3106fc48f5d5626a1ede394b)
+        ;
+
+        
+    
+    
+            var marker_efac476472596e4d38d07a78983641df = L.marker(
+                [48.2037395, 16.3617819],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_7cc0b0420ab6f4d812abf7f7e3c084da = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_79b2750b091f35657b727f38df445988 = $(`<div id="html_79b2750b091f35657b727f38df445988" style="width: 100.0%; height: 100.0%;"><b>Kunsthistorisches Museum, Vienna, Austria</b><br>Total Stroke Cases at This Place: 10<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>5</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>4</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>3</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_7cc0b0420ab6f4d812abf7f7e3c084da.setContent(html_79b2750b091f35657b727f38df445988);
+            
+        
+
+        marker_efac476472596e4d38d07a78983641df.bindPopup(popup_7cc0b0420ab6f4d812abf7f7e3c084da)
+        ;
+
+        
+    
+    
+            var marker_838562ca7a2389a03680f18425d519d6 = L.marker(
+                [48.20849, 16.37208],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_c3b5f2f55bdd9f7fa416abd18c7054a5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_dbc33a042faf617dca04ad51477ca731 = $(`<div id="html_dbc33a042faf617dca04ad51477ca731" style="width: 100.0%; height: 100.0%;"><b>Kärntnertor Theater, Vienna, Austria</b><br>Total Stroke Cases at This Place: 19<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>12</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>18</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>5.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>6.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>8.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>9</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>10</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>5.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>12.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>0.0</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_c3b5f2f55bdd9f7fa416abd18c7054a5.setContent(html_dbc33a042faf617dca04ad51477ca731);
+            
+        
+
+        marker_838562ca7a2389a03680f18425d519d6.bindPopup(popup_c3b5f2f55bdd9f7fa416abd18c7054a5)
+        ;
+
+        
+    
+    
+            var marker_6037677efe6dbaba7febc0b1607d53fc = L.marker(
+                [48.2025896, 16.3590667],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_36ec6451eebd3324edb02b65bd45bbb2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_73db5b8f86c3eeff3467e5725d507b70 = $(`<div id="html_73db5b8f86c3eeff3467e5725d507b70" style="width: 100.0%; height: 100.0%;"><b>Leopold Museum, Vienna, Austria</b><br>Total Stroke Cases at This Place: 10<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>5</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>1</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_36ec6451eebd3324edb02b65bd45bbb2.setContent(html_73db5b8f86c3eeff3467e5725d507b70);
+            
+        
+
+        marker_6037677efe6dbaba7febc0b1607d53fc.bindPopup(popup_36ec6451eebd3324edb02b65bd45bbb2)
+        ;
+
+        
+    
+    
+            var marker_71ded7f392e5be15dc9b2b4686922bf4 = L.marker(
+                [48.1977278, 16.361819],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_d072681de296002c4a6f9ff4aeeed048 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_07dfe1b15d12fd4819e15fe32467d940 = $(`<div id="html_07dfe1b15d12fd4819e15fe32467d940" style="width: 100.0%; height: 100.0%;"><b>Naschmarkt, Vienna, Austria</b><br>Total Stroke Cases at This Place: 18<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>12</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>16</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>8.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>9.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>9</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>9</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>4</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_d072681de296002c4a6f9ff4aeeed048.setContent(html_07dfe1b15d12fd4819e15fe32467d940);
+            
+        
+
+        marker_71ded7f392e5be15dc9b2b4686922bf4.bindPopup(popup_d072681de296002c4a6f9ff4aeeed048)
+        ;
+
+        
+    
+    
+            var marker_cd3b766dea20a02f3f2684b95b6b8b0d = L.marker(
+                [48.20849, 16.37208],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_7ab61ddc43dd9802c34266924d7d52aa = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c02d105d3aa1198f54fbbb72aedd9c1a = $(`<div id="html_c02d105d3aa1198f54fbbb72aedd9c1a" style="width: 100.0%; height: 100.0%;"><b>Prater Park, Vienna, Austria</b><br>Total Stroke Cases at This Place: 15<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>10</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>11</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>11.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>10</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>4</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_7ab61ddc43dd9802c34266924d7d52aa.setContent(html_c02d105d3aa1198f54fbbb72aedd9c1a);
+            
+        
+
+        marker_cd3b766dea20a02f3f2684b95b6b8b0d.bindPopup(popup_7ab61ddc43dd9802c34266924d7d52aa)
+        ;
+
+        
+    
+    
+            var marker_dbaaedccf6203f87b4164f0349eccd06 = L.marker(
+                [48.2108257, 16.3565728],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_8635eeca911d95e1572e6625c3246aed = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_cf1ee3ad006cf8c6ce4a4408439589b6 = $(`<div id="html_cf1ee3ad006cf8c6ce4a4408439589b6" style="width: 100.0%; height: 100.0%;"><b>Rathaus, Vienna, Austria</b><br>Total Stroke Cases at This Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>11</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>9.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>8</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>2</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_8635eeca911d95e1572e6625c3246aed.setContent(html_cf1ee3ad006cf8c6ce4a4408439589b6);
+            
+        
+
+        marker_dbaaedccf6203f87b4164f0349eccd06.bindPopup(popup_8635eeca911d95e1572e6625c3246aed)
+        ;
+
+        
+    
+    
+            var marker_8a55da184374d1d1d6518ca6a73a5e68 = L.marker(
+                [48.2011836, 16.3742935],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_e0b20e01b49d8909f682c67eb25a9fa8 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e130ffba2d8901ab300a2fe4adda3536 = $(`<div id="html_e130ffba2d8901ab300a2fe4adda3536" style="width: 100.0%; height: 100.0%;"><b>Schwarzenbergplatz, Vienna, Austria</b><br>Total Stroke Cases at This Place: 14<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>8</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>14.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>5.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>8</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>2</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_e0b20e01b49d8909f682c67eb25a9fa8.setContent(html_e130ffba2d8901ab300a2fe4adda3536);
+            
+        
+
+        marker_8a55da184374d1d1d6518ca6a73a5e68.bindPopup(popup_e0b20e01b49d8909f682c67eb25a9fa8)
+        ;
+
+        
+    
+    
+            var marker_6cec9ccea82954749f4d41f222ef4a9e = L.marker(
+                [48.1849894, 16.3115684],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_160c3ddda6d9623e36f41aac790bad7d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8b9f10677a6515524f2ba504eb82cdba = $(`<div id="html_8b9f10677a6515524f2ba504eb82cdba" style="width: 100.0%; height: 100.0%;"><b>Schönbrunn Palace, Vienna, Austria</b><br>Total Stroke Cases at This Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>11</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>9.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>6</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>4</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_160c3ddda6d9623e36f41aac790bad7d.setContent(html_8b9f10677a6515524f2ba504eb82cdba);
+            
+        
+
+        marker_6cec9ccea82954749f4d41f222ef4a9e.bindPopup(popup_160c3ddda6d9623e36f41aac790bad7d)
+        ;
+
+        
+    
+    
+            var marker_9af82ac4ab532475de723c2e2214defc = L.marker(
+                [48.2076988, 16.3656104],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_97973b719d0586bd16caa9a91e285ba0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_56aa028a4dc9b3ef2565f5a1315e6d73 = $(`<div id="html_56aa028a4dc9b3ef2565f5a1315e6d73" style="width: 100.0%; height: 100.0%;"><b>Sisi Museum, Vienna, Austria</b><br>Total Stroke Cases at This Place: 11<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>8</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>10</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>9</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>2</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>1</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_97973b719d0586bd16caa9a91e285ba0.setContent(html_56aa028a4dc9b3ef2565f5a1315e6d73);
+            
+        
+
+        marker_9af82ac4ab532475de723c2e2214defc.bindPopup(popup_97973b719d0586bd16caa9a91e285ba0)
+        ;
+
+        
+    
+    
+            var marker_7a27f5e35cbc0280c6c52b2e61da9584 = L.marker(
+                [48.2084923, 16.3731269],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_41627098b4595210b0cba24c4effd306 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_21080e92249df21b69179d89daad6903 = $(`<div id="html_21080e92249df21b69179d89daad6903" style="width: 100.0%; height: 100.0%;"><b>St. Stephen's Cathedral, Vienna, Austria</b><br>Total Stroke Cases at This Place: 17<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>8</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>9</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>17.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>4.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>10.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>10</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>9</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>1</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_41627098b4595210b0cba24c4effd306.setContent(html_21080e92249df21b69179d89daad6903);
+            
+        
+
+        marker_7a27f5e35cbc0280c6c52b2e61da9584.bindPopup(popup_41627098b4595210b0cba24c4effd306)
+        ;
+
+        
+    
+    
+            var marker_8b933069244a87e49ce224ebf612478a = L.marker(
+                [48.2032859, 16.3691934],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_a314564e93992465ae74d62e32308a14 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_80b4e0962b60fc4e429a02b819296be3 = $(`<div id="html_80b4e0962b60fc4e429a02b819296be3" style="width: 100.0%; height: 100.0%;"><b>Vienna State Opera, Vienna, Austria</b><br>Total Stroke Cases at This Place: 12<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>8</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>7</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>2</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_a314564e93992465ae74d62e32308a14.setContent(html_80b4e0962b60fc4e429a02b819296be3);
+            
+        
+
+        marker_8b933069244a87e49ce224ebf612478a.bindPopup(popup_a314564e93992465ae74d62e32308a14)
+        ;
+
+        
+    
+    
+            var marker_290048990153bba8e9a2ad597ad55509 = L.marker(
+                [48.2154146, 16.3591401],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_185f9405fccae960095424efcee59ae9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6617bccdfb45e8f24475d22f11cac5d3 = $(`<div id="html_6617bccdfb45e8f24475d22f11cac5d3" style="width: 100.0%; height: 100.0%;"><b>Votivkirche, Vienna, Austria</b><br>Total Stroke Cases at This Place: 9<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>7</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>6</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>4.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>3</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>1</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_185f9405fccae960095424efcee59ae9.setContent(html_6617bccdfb45e8f24475d22f11cac5d3);
+            
+        
+
+        marker_290048990153bba8e9a2ad597ad55509.bindPopup(popup_185f9405fccae960095424efcee59ae9)
+        ;
+
+        
+    
+    
+            var marker_aedf401f1b71771441ba74eae96b7ba2 = L.marker(
+                [48.2158036, 16.3993734],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+        var popup_74df4d3cd2e043212f8352fe6ae38421 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_91c1ee8ce37b55805cc335efc8b18ab4 = $(`<div id="html_91c1ee8ce37b55805cc335efc8b18ab4" style="width: 100.0%; height: 100.0%;"><b>Wurstelprater, Vienna, Austria</b><br>Total Stroke Cases at This Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Female</td><td>9</td></tr><tr><td rowspan='2'>hypertension</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0 Indicates 'NO'</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>1 Indicates 'Yes'</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Yes</td><td>12</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Self-employed</td><td>4.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Private</td><td>8.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>children</td><td>0.0</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>Rural</td><td>8</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td colspan='3' style='border-top: 2px solid black;'></td></tr><tr><td>smokes</td><td>4</td></tr></table><br><p>Disclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information.</p><p>This Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.</p></div>`)[0];
+                popup_74df4d3cd2e043212f8352fe6ae38421.setContent(html_91c1ee8ce37b55805cc335efc8b18ab4);
+            
+        
+
+        marker_aedf401f1b71771441ba74eae96b7ba2.bindPopup(popup_74df4d3cd2e043212f8352fe6ae38421)
+        ;
+
+        
+    
+    
+            var tile_layer_6ef6a456438c6debf04d8ec5eb2351f3 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+            var layer_control_09cf08e873519984ef223184ffa57c39 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_424e244d889be177f0fe1b0c276fdf8c,
+                    "cartodbpositron" : tile_layer_6ef6a456438c6debf04d8ec5eb2351f3,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_09cf08e873519984ef223184ffa57c39.base_layers,
+                layer_control_09cf08e873519984ef223184ffa57c39.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+            tile_layer_6ef6a456438c6debf04d8ec5eb2351f3.remove();
+        
+    
+            map_efa0f967d57318c67dd1956a60c61f28.fitBounds(
+                [[48.2084923, 16.3731269], [48.1849894, 16.3115684], [48.1910716, 16.3797606], [48.2063294, 16.3656259], [48.20849, 16.37208], [48.2037395, 16.3617819], [48.1977278, 16.361819], [48.2032859, 16.3691934], [48.20849, 16.37208], [48.2108257, 16.3565728], [48.20849, 16.37208], [48.2154146, 16.3591401], [48.2073844, 16.3939411], [48.2090711, 16.3690528], [48.2076988, 16.3656104], [48.2060921, 16.3640091], [48.2158036, 16.3993734], [48.2025896, 16.3590667], [48.2011836, 16.3742935], [48.1972764, 16.3540014]],
+                {}
+            );
+        
+    
+            var marker_c6eb34f27c6fd461ca8be851712e5a22 = L.marker(
+                [48.1865716, 16.36733935],
+                {}
+            ).addTo(map_efa0f967d57318c67dd1956a60c61f28);
+        
+    
+            var div_icon_e04c4dadea90e696cd50674c508cb816 = L.divIcon({"className": "empty", "html": "\n\u003cdiv style=\"position: absolute; top: 10px; left: 10px; background-color: white; padding: 10px; width: 5000%;\"\u003e\n    \u003cp\u003e\u003cb\u003e\u003ch5\u003eNote:\u003c/b\u003e Vienna- Click on each blue Markers for Stroke Patient Details of this city in Austria. Please read this note till the end.\u003c/p\u003e\n    \u003cp\u003eIt is important to have awareness of Stroke, which can occur due to multiple reasons including late pregnancies, with pre-existing conditions such as hypertension, heart disease. Occurs when the supply of blood to the brain is reduced or blocked completely, which prevents brain tissue from getting oxygen and nutrients. Urgent medical attention is usually recommended by healthcare providers. It is dangerous and life-threatening. This condition is treatable by a medical professional. However, it can last several years or be lifelong.\u003c/p\u003e\n    \u003cp\u003eDisclaimer: This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on old data between 2004-2023 taken from the internet. It should be used only for educational purposes without any guarantee on the accuracy of information. This Project is dedicated to my lovely Meeti (Mrs. Mitaly Srivastava), my former friend, who is currently a stroke patient in Vienna. May Lord help her in speedy recovery.\u003c/p\u003e\n\u003c/div\u003e\n"});
+            marker_c6eb34f27c6fd461ca8be851712e5a22.setIcon(div_icon_e04c4dadea90e696cd50674c508cb816);
+        
+</script>
+</html>
