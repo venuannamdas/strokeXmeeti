@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_103de6e2cbe5cc249ca1be3b204c6066 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_103de6e2cbe5cc249ca1be3b204c6066" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_103de6e2cbe5cc249ca1be3b204c6066 = L.map(
+                "map_103de6e2cbe5cc249ca1be3b204c6066",
+                {
+                    center: [48.206856900000005, 16.36733935],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_275107198b7e484cc260767f0ea518c4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var marker_cf2ef22816ea60033c9661c8c75b8e24 = L.marker(
+                [48.20849, 16.37208],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_a35787a95a006be11c9cb71d6ad40c8f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e1\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_cf2ef22816ea60033c9661c8c75b8e24.setIcon(div_icon_a35787a95a006be11c9cb71d6ad40c8f);
+        
+    
+        var popup_4b43f2fcfa7553bc81757ec160ac2207 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e5f374ef7ba93b6c9ef8050a479cf2fa = $(`<div id="html_e5f374ef7ba93b6c9ef8050a479cf2fa" style="width: 100.0%; height: 100.0%;"><b>Albertina Museum, Vienna, Austria</b><br>Total Stroke Cases at this Place: 16<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>9</td></tr><tr><td>Female</td><td>7</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>9</td></tr><tr><td>1</td><td>7</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>14</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td>Yes</td><td>16.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>3.0</td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td>Private</td><td>10.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>13</td></tr><tr><td>Rural</td><td>3</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td>formerly smoked</td><td>6</td></tr><tr><td>smokes</td><td>3</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_4b43f2fcfa7553bc81757ec160ac2207.setContent(html_e5f374ef7ba93b6c9ef8050a479cf2fa);
+            
+        
+
+        marker_cf2ef22816ea60033c9661c8c75b8e24.bindPopup(popup_4b43f2fcfa7553bc81757ec160ac2207)
+        ;
+
+        
+    
+    
+            var marker_8f5fd7b2e4495da3eba16f876d188d8a = L.marker(
+                [48.1910716, 16.3797606],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_d0acc92892473fe2adc4aa9438be81c8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e2\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_8f5fd7b2e4495da3eba16f876d188d8a.setIcon(div_icon_d0acc92892473fe2adc4aa9438be81c8);
+        
+    
+        var popup_f5851ecefdde0ac2e36af2a66938ec9d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4d36f333bb6dbc8cc4b33a4550f90627 = $(`<div id="html_4d36f333bb6dbc8cc4b33a4550f90627" style="width: 100.0%; height: 100.0%;"><b>Belvedere Palace, Vienna, Austria</b><br>Total Stroke Cases at this Place: 12<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>6</td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>7</td></tr><tr><td>1</td><td>5</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>7</td></tr><tr><td>1</td><td>5</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>3</td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>5.0</td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td>Rural</td><td>6</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td>never smoked</td><td>6</td></tr><tr><td>formerly smoked</td><td>4</td></tr><tr><td>smokes</td><td>1</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_f5851ecefdde0ac2e36af2a66938ec9d.setContent(html_4d36f333bb6dbc8cc4b33a4550f90627);
+            
+        
+
+        marker_8f5fd7b2e4495da3eba16f876d188d8a.bindPopup(popup_f5851ecefdde0ac2e36af2a66938ec9d)
+        ;
+
+        
+    
+    
+            var marker_a1f5450f9c566c0901195ad016ac01cc = L.marker(
+                [48.2090711, 16.3690528],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_91a76b71ea584328f8a774422372f9a7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e3\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_a1f5450f9c566c0901195ad016ac01cc.setIcon(div_icon_91a76b71ea584328f8a774422372f9a7);
+        
+    
+        var popup_fe60cef47680aee29161aefdbf95faf1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ed09cd3f9a3bda817798be5b6fb14580 = $(`<div id="html_ed09cd3f9a3bda817798be5b6fb14580" style="width: 100.0%; height: 100.0%;"><b>Graben, Vienna, Austria</b><br>Total Stroke Cases at this Place: 10<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>3</td></tr><tr><td>Female</td><td>7</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>7</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>8</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>4</td></tr><tr><td>Yes</td><td>6</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td>Rural</td><td>4</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td>never smoked</td><td>5</td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td>smokes</td><td>2</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_fe60cef47680aee29161aefdbf95faf1.setContent(html_ed09cd3f9a3bda817798be5b6fb14580);
+            
+        
+
+        marker_a1f5450f9c566c0901195ad016ac01cc.bindPopup(popup_fe60cef47680aee29161aefdbf95faf1)
+        ;
+
+        
+    
+    
+            var marker_7fc21e0dd04fed635054433293727f7b = L.marker(
+                [48.1972764, 16.3540014],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_ba0497bdfe11187ff71f228978fcc7a6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e4\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_7fc21e0dd04fed635054433293727f7b.setIcon(div_icon_ba0497bdfe11187ff71f228978fcc7a6);
+        
+    
+        var popup_ca27d5ab58e719c0e8393aceb3a7c557 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c634b81b1865e29f7c53e6367bfe768a = $(`<div id="html_c634b81b1865e29f7c53e6367bfe768a" style="width: 100.0%; height: 100.0%;"><b>Haus des Meeres, Vienna, Austria</b><br>Total Stroke Cases at this Place: 7<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>3</td></tr><tr><td>Female</td><td>4</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>5</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>7.0</td></tr><tr><td>1</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td>Yes</td><td>7.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>0.0</td></tr><tr><td>Self-employed</td><td>1.0</td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td>Rural</td><td>2</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td>never smoked</td><td>2</td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td>smokes</td><td>1</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_ca27d5ab58e719c0e8393aceb3a7c557.setContent(html_c634b81b1865e29f7c53e6367bfe768a);
+            
+        
+
+        marker_7fc21e0dd04fed635054433293727f7b.bindPopup(popup_ca27d5ab58e719c0e8393aceb3a7c557)
+        ;
+
+        
+    
+    
+            var marker_92fa4a598c5e6e9cea213c374f604ca4 = L.marker(
+                [48.2060921, 16.3640091],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_e702652d590dc8121754c0be4b9787d0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e5\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_92fa4a598c5e6e9cea213c374f604ca4.setIcon(div_icon_e702652d590dc8121754c0be4b9787d0);
+        
+    
+        var popup_e32ad06c4429c77e467220a308d0a4f2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0d52b8f5ab276338ebb5a540278bf14d = $(`<div id="html_0d52b8f5ab276338ebb5a540278bf14d" style="width: 100.0%; height: 100.0%;"><b>Heldenplatz, Vienna, Austria</b><br>Total Stroke Cases at this Place: 8<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>4</td></tr><tr><td>Female</td><td>4</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>4</td></tr><tr><td>1</td><td>4</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>5</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td>Yes</td><td>8.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td>Private</td><td>5.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>2</td></tr><tr><td>Rural</td><td>6</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td>never smoked</td><td>1</td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td>smokes</td><td>4</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_e32ad06c4429c77e467220a308d0a4f2.setContent(html_0d52b8f5ab276338ebb5a540278bf14d);
+            
+        
+
+        marker_92fa4a598c5e6e9cea213c374f604ca4.bindPopup(popup_e32ad06c4429c77e467220a308d0a4f2)
+        ;
+
+        
+    
+    
+            var marker_089a628df43b75c5d339c1cb83a8477b = L.marker(
+                [48.2063294, 16.3656259],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_674d07d7d58928b2f2bfdc56e1f92144 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e6\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_089a628df43b75c5d339c1cb83a8477b.setIcon(div_icon_674d07d7d58928b2f2bfdc56e1f92144);
+        
+    
+        var popup_7b32f9c96af74692b70da3cc1a7b2009 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_687e60df9d66da3c6b9d508cf00c679a = $(`<div id="html_687e60df9d66da3c6b9d508cf00c679a" style="width: 100.0%; height: 100.0%;"><b>Hofburg Palace, Vienna, Austria</b><br>Total Stroke Cases at this Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>8</td></tr><tr><td>1</td><td>5</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>11</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td>Yes</td><td>13.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>0.0</td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td>Private</td><td>10.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td>Rural</td><td>8</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1.0</td></tr><tr><td>never smoked</td><td>7.0</td></tr><tr><td>formerly smoked</td><td>5.0</td></tr><tr><td>smokes</td><td>0.0</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_7b32f9c96af74692b70da3cc1a7b2009.setContent(html_687e60df9d66da3c6b9d508cf00c679a);
+            
+        
+
+        marker_089a628df43b75c5d339c1cb83a8477b.bindPopup(popup_7b32f9c96af74692b70da3cc1a7b2009)
+        ;
+
+        
+    
+    
+            var marker_9b35b9a3250bc2b4d33dfeaac0652e2f = L.marker(
+                [48.2073844, 16.3939411],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_c2cb2220e2af72359627f9e2be11d6d4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e7\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_9b35b9a3250bc2b4d33dfeaac0652e2f.setIcon(div_icon_c2cb2220e2af72359627f9e2be11d6d4);
+        
+    
+        var popup_1d7f047c88df41c3a722f588b312b6a1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ce4d0d83d7978e894d50d1206382c3b2 = $(`<div id="html_ce4d0d83d7978e894d50d1206382c3b2" style="width: 100.0%; height: 100.0%;"><b>Hundertwasserhaus, Vienna, Austria</b><br>Total Stroke Cases at this Place: 9<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td>Female</td><td>4</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>7</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>7</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td>Yes</td><td>8</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td>Private</td><td>4.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>4</td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td>smokes</td><td>2</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_1d7f047c88df41c3a722f588b312b6a1.setContent(html_ce4d0d83d7978e894d50d1206382c3b2);
+            
+        
+
+        marker_9b35b9a3250bc2b4d33dfeaac0652e2f.bindPopup(popup_1d7f047c88df41c3a722f588b312b6a1)
+        ;
+
+        
+    
+    
+            var marker_19133abed9228677c7c96ab4ae3d8051 = L.marker(
+                [48.2037395, 16.3617819],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_6f1ff2a164905c35aca435676c618aaa = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e8\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_19133abed9228677c7c96ab4ae3d8051.setIcon(div_icon_6f1ff2a164905c35aca435676c618aaa);
+        
+    
+        var popup_a0286b29ad41d34c95f2cdd7e05aae92 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d5a3cbdc7f90013d2bdb09b65ad8383b = $(`<div id="html_d5a3cbdc7f90013d2bdb09b65ad8383b" style="width: 100.0%; height: 100.0%;"><b>Kunsthistorisches Museum, Vienna, Austria</b><br>Total Stroke Cases at this Place: 10<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td>Female</td><td>5</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>8</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>8</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td>Rural</td><td>4</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td>smokes</td><td>3</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_a0286b29ad41d34c95f2cdd7e05aae92.setContent(html_d5a3cbdc7f90013d2bdb09b65ad8383b);
+            
+        
+
+        marker_19133abed9228677c7c96ab4ae3d8051.bindPopup(popup_a0286b29ad41d34c95f2cdd7e05aae92)
+        ;
+
+        
+    
+    
+            var marker_a913398a277d3b35ff0b5107351d6231 = L.marker(
+                [48.20849, 16.37208],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_968105833be6f5881b97c44272366b8c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e9\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_a913398a277d3b35ff0b5107351d6231.setIcon(div_icon_968105833be6f5881b97c44272366b8c);
+        
+    
+        var popup_b1ed71bf5a36c3ff0ec55f48905bf337 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b18ed0854d4c5d122f2ce02e5b2f465e = $(`<div id="html_b18ed0854d4c5d122f2ce02e5b2f465e" style="width: 100.0%; height: 100.0%;"><b>Kärntnertor Theater, Vienna, Austria</b><br>Total Stroke Cases at this Place: 19<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td>Female</td><td>12</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>15</td></tr><tr><td>1</td><td>4</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>17</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td>Yes</td><td>18</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>5.0</td></tr><tr><td>Self-employed</td><td>6.0</td></tr><tr><td>Private</td><td>8.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>9</td></tr><tr><td>Rural</td><td>10</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>5.0</td></tr><tr><td>never smoked</td><td>12.0</td></tr><tr><td>formerly smoked</td><td>2.0</td></tr><tr><td>smokes</td><td>0.0</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_b1ed71bf5a36c3ff0ec55f48905bf337.setContent(html_b18ed0854d4c5d122f2ce02e5b2f465e);
+            
+        
+
+        marker_a913398a277d3b35ff0b5107351d6231.bindPopup(popup_b1ed71bf5a36c3ff0ec55f48905bf337)
+        ;
+
+        
+    
+    
+            var marker_06ad6bc9cfa2c7b7e244082f54aa8a6d = L.marker(
+                [48.2025896, 16.3590667],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_0cc3f4b3186c599002fdb91f26f26741 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e10\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_06ad6bc9cfa2c7b7e244082f54aa8a6d.setIcon(div_icon_0cc3f4b3186c599002fdb91f26f26741);
+        
+    
+        var popup_5c7f0d223e4fa74f6eb8e82bb47a9f44 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b46823905660152fc6cac338b38241a6 = $(`<div id="html_b46823905660152fc6cac338b38241a6" style="width: 100.0%; height: 100.0%;"><b>Leopold Museum, Vienna, Austria</b><br>Total Stroke Cases at this Place: 10<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td>Female</td><td>5</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>8</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>8</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td>never smoked</td><td>4</td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td>smokes</td><td>1</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_5c7f0d223e4fa74f6eb8e82bb47a9f44.setContent(html_b46823905660152fc6cac338b38241a6);
+            
+        
+
+        marker_06ad6bc9cfa2c7b7e244082f54aa8a6d.bindPopup(popup_5c7f0d223e4fa74f6eb8e82bb47a9f44)
+        ;
+
+        
+    
+    
+            var marker_4a1eb66f019598ccbad8dadbc483405b = L.marker(
+                [48.1977278, 16.361819],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_90674057d85a236ac63160b507e13869 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e11\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_4a1eb66f019598ccbad8dadbc483405b.setIcon(div_icon_90674057d85a236ac63160b507e13869);
+        
+    
+        var popup_e7b926569da912ca5f5bfae4ff723023 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4a78bd3615b83f55e251f64889bc83a8 = $(`<div id="html_4a78bd3615b83f55e251f64889bc83a8" style="width: 100.0%; height: 100.0%;"><b>Naschmarkt, Vienna, Austria</b><br>Total Stroke Cases at this Place: 18<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>6</td></tr><tr><td>Female</td><td>12</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>13</td></tr><tr><td>1</td><td>5</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>14</td></tr><tr><td>1</td><td>4</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>2</td></tr><tr><td>Yes</td><td>16</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>8.0</td></tr><tr><td>Private</td><td>9.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>9</td></tr><tr><td>Rural</td><td>9</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>1</td></tr><tr><td>never smoked</td><td>7</td></tr><tr><td>formerly smoked</td><td>6</td></tr><tr><td>smokes</td><td>4</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_e7b926569da912ca5f5bfae4ff723023.setContent(html_4a78bd3615b83f55e251f64889bc83a8);
+            
+        
+
+        marker_4a1eb66f019598ccbad8dadbc483405b.bindPopup(popup_e7b926569da912ca5f5bfae4ff723023)
+        ;
+
+        
+    
+    
+            var marker_8e8af24ac47da29f3a391607bfb10d84 = L.marker(
+                [48.20849, 16.37208],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_26ff88c72e8b3aff6d54d4898196c601 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e12\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_8e8af24ac47da29f3a391607bfb10d84.setIcon(div_icon_26ff88c72e8b3aff6d54d4898196c601);
+        
+    
+        var popup_db215a4081cbafe2d2f2e270a9b648f1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_caee9d6c4511be3d65080393cc0c6baa = $(`<div id="html_caee9d6c4511be3d65080393cc0c6baa" style="width: 100.0%; height: 100.0%;"><b>Prater Park, Vienna, Austria</b><br>Total Stroke Cases at this Place: 15<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>5</td></tr><tr><td>Female</td><td>10</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>13</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>12</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>4</td></tr><tr><td>Yes</td><td>11</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td>Private</td><td>11.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>10</td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>3</td></tr><tr><td>never smoked</td><td>4</td></tr><tr><td>formerly smoked</td><td>4</td></tr><tr><td>smokes</td><td>4</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_db215a4081cbafe2d2f2e270a9b648f1.setContent(html_caee9d6c4511be3d65080393cc0c6baa);
+            
+        
+
+        marker_8e8af24ac47da29f3a391607bfb10d84.bindPopup(popup_db215a4081cbafe2d2f2e270a9b648f1)
+        ;
+
+        
+    
+    
+            var marker_93dfcf7f920a7c6f1cf351f50b875e30 = L.marker(
+                [48.2108257, 16.3565728],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_e4ef9231972c7bae93d16ad2712ad2cf = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e13\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_93dfcf7f920a7c6f1cf351f50b875e30.setIcon(div_icon_e4ef9231972c7bae93d16ad2712ad2cf);
+        
+    
+        var popup_e63df1f19894f58da04be28519560493 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_692463c31e5cd96f0a069d0fc1d3f85f = $(`<div id="html_692463c31e5cd96f0a069d0fc1d3f85f" style="width: 100.0%; height: 100.0%;"><b>Rathaus, Vienna, Austria</b><br>Total Stroke Cases at this Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>8</td></tr><tr><td>1</td><td>5</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>13.0</td></tr><tr><td>1</td><td>0.0</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>2</td></tr><tr><td>Yes</td><td>11</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td>Private</td><td>9.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>8</td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>3</td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td>formerly smoked</td><td>5</td></tr><tr><td>smokes</td><td>2</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_e63df1f19894f58da04be28519560493.setContent(html_692463c31e5cd96f0a069d0fc1d3f85f);
+            
+        
+
+        marker_93dfcf7f920a7c6f1cf351f50b875e30.bindPopup(popup_e63df1f19894f58da04be28519560493)
+        ;
+
+        
+    
+    
+            var marker_0d70e53a7d097c46e4c16a47ed6a9d8c = L.marker(
+                [48.2011836, 16.3742935],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_0d5977dee46a0587df200210332183fe = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e14\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_0d70e53a7d097c46e4c16a47ed6a9d8c.setIcon(div_icon_0d5977dee46a0587df200210332183fe);
+        
+    
+        var popup_4e7e0719540bc1741563056257be59c5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_699d3e16548469e844c716a9ce1846e2 = $(`<div id="html_699d3e16548469e844c716a9ce1846e2" style="width: 100.0%; height: 100.0%;"><b>Schwarzenbergplatz, Vienna, Austria</b><br>Total Stroke Cases at this Place: 14<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>8</td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>12</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>11</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td>Yes</td><td>14.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td>Self-employed</td><td>5.0</td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td>Rural</td><td>8</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>3</td></tr><tr><td>never smoked</td><td>5</td></tr><tr><td>formerly smoked</td><td>4</td></tr><tr><td>smokes</td><td>2</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_4e7e0719540bc1741563056257be59c5.setContent(html_699d3e16548469e844c716a9ce1846e2);
+            
+        
+
+        marker_0d70e53a7d097c46e4c16a47ed6a9d8c.bindPopup(popup_4e7e0719540bc1741563056257be59c5)
+        ;
+
+        
+    
+    
+            var marker_962ec0b424e1c308cdb4989afd944c90 = L.marker(
+                [48.1849894, 16.3115684],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_4996df046b515030d16c69f4a901e72f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e15\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_962ec0b424e1c308cdb4989afd944c90.setIcon(div_icon_4996df046b515030d16c69f4a901e72f);
+        
+    
+        var popup_6052a81bcbacbc40616dc7fb64920b2a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f10e334d091861d873aadb85603b96d6 = $(`<div id="html_f10e334d091861d873aadb85603b96d6" style="width: 100.0%; height: 100.0%;"><b>Schönbrunn Palace, Vienna, Austria</b><br>Total Stroke Cases at this Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>7</td></tr><tr><td>Female</td><td>6</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>10</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>10</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>2</td></tr><tr><td>Yes</td><td>11</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td>Private</td><td>9.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>7</td></tr><tr><td>Rural</td><td>6</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td>never smoked</td><td>2</td></tr><tr><td>formerly smoked</td><td>5</td></tr><tr><td>smokes</td><td>4</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_6052a81bcbacbc40616dc7fb64920b2a.setContent(html_f10e334d091861d873aadb85603b96d6);
+            
+        
+
+        marker_962ec0b424e1c308cdb4989afd944c90.bindPopup(popup_6052a81bcbacbc40616dc7fb64920b2a)
+        ;
+
+        
+    
+    
+            var marker_ada4b8a2847c8dbc58d4ee52a17c3d5b = L.marker(
+                [48.2076988, 16.3656104],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_ede0148d5f904d3963b13f11313abb2f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e16\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_ada4b8a2847c8dbc58d4ee52a17c3d5b.setIcon(div_icon_ede0148d5f904d3963b13f11313abb2f);
+        
+    
+        var popup_0e767c1c061e2c7b16fb9745fe14f2e2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_468457764c009ca87141ede7b6dad0b5 = $(`<div id="html_468457764c009ca87141ede7b6dad0b5" style="width: 100.0%; height: 100.0%;"><b>Sisi Museum, Vienna, Austria</b><br>Total Stroke Cases at this Place: 11<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>3</td></tr><tr><td>Female</td><td>8</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>8</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>9</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td>Yes</td><td>10</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td>Private</td><td>7.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>9</td></tr><tr><td>Rural</td><td>2</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td>never smoked</td><td>6</td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td>smokes</td><td>1</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_0e767c1c061e2c7b16fb9745fe14f2e2.setContent(html_468457764c009ca87141ede7b6dad0b5);
+            
+        
+
+        marker_ada4b8a2847c8dbc58d4ee52a17c3d5b.bindPopup(popup_0e767c1c061e2c7b16fb9745fe14f2e2)
+        ;
+
+        
+    
+    
+            var marker_f37bb83c0decedc16d9af3305684809d = L.marker(
+                [48.2084923, 16.3731269],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_5c841686377b60541682667d7d426f8d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e17\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_f37bb83c0decedc16d9af3305684809d.setIcon(div_icon_5c841686377b60541682667d7d426f8d);
+        
+    
+        var popup_aac9d8cef7f6d918cb6a136d0c1c3adc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_37c2ff3a896c28a5f640a59c957edb67 = $(`<div id="html_37c2ff3a896c28a5f640a59c957edb67" style="width: 100.0%; height: 100.0%;"><b>St. Stephen's Cathedral, Vienna, Austria</b><br>Total Stroke Cases at this Place: 17<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>8</td></tr><tr><td>Female</td><td>9</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>14</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>14</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>0.0</td></tr><tr><td>Yes</td><td>17.0</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>3.0</td></tr><tr><td>Self-employed</td><td>4.0</td></tr><tr><td>Private</td><td>10.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>7</td></tr><tr><td>Rural</td><td>10</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>2</td></tr><tr><td>never smoked</td><td>9</td></tr><tr><td>formerly smoked</td><td>5</td></tr><tr><td>smokes</td><td>1</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_aac9d8cef7f6d918cb6a136d0c1c3adc.setContent(html_37c2ff3a896c28a5f640a59c957edb67);
+            
+        
+
+        marker_f37bb83c0decedc16d9af3305684809d.bindPopup(popup_aac9d8cef7f6d918cb6a136d0c1c3adc)
+        ;
+
+        
+    
+    
+            var marker_50379a3fa5849fe25e6054543bf8e3e9 = L.marker(
+                [48.2032859, 16.3691934],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_14104c8a0c65c4bc09ededcc4ba2f9fc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e18\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_50379a3fa5849fe25e6054543bf8e3e9.setIcon(div_icon_14104c8a0c65c4bc09ededcc4ba2f9fc);
+        
+    
+        var popup_c3fdfc9ad8f7a1119a53b1f6dd8c46de = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_45a02d47872e3ba87b33d3ec6ebe999d = $(`<div id="html_45a02d47872e3ba87b33d3ec6ebe999d" style="width: 100.0%; height: 100.0%;"><b>Vienna State Opera, Vienna, Austria</b><br>Total Stroke Cases at this Place: 12<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>4</td></tr><tr><td>Female</td><td>8</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>12.0</td></tr><tr><td>1</td><td>0.0</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>10</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>3</td></tr><tr><td>Yes</td><td>9</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td>Self-employed</td><td>3.0</td></tr><tr><td>Private</td><td>6.0</td></tr><tr><td>children</td><td>1.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>7</td></tr><tr><td>Rural</td><td>5</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td>formerly smoked</td><td>3</td></tr><tr><td>smokes</td><td>2</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_c3fdfc9ad8f7a1119a53b1f6dd8c46de.setContent(html_45a02d47872e3ba87b33d3ec6ebe999d);
+            
+        
+
+        marker_50379a3fa5849fe25e6054543bf8e3e9.bindPopup(popup_c3fdfc9ad8f7a1119a53b1f6dd8c46de)
+        ;
+
+        
+    
+    
+            var marker_cedc44cee954c4ebba0554a8ca6380ba = L.marker(
+                [48.2154146, 16.3591401],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_bbea00714f0bef86cbaf45045be83d59 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e19\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_cedc44cee954c4ebba0554a8ca6380ba.setIcon(div_icon_bbea00714f0bef86cbaf45045be83d59);
+        
+    
+        var popup_d6297fd789f3be5e2be143738b44ffd2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_18a1daed77a8b1f3ae3f3d73cc8bd770 = $(`<div id="html_18a1daed77a8b1f3ae3f3d73cc8bd770" style="width: 100.0%; height: 100.0%;"><b>Votivkirche, Vienna, Austria</b><br>Total Stroke Cases at this Place: 9<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>2</td></tr><tr><td>Female</td><td>7</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>7</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>7</td></tr><tr><td>1</td><td>2</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>3</td></tr><tr><td>Yes</td><td>6</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>2.0</td></tr><tr><td>Self-employed</td><td>2.0</td></tr><tr><td>Private</td><td>4.0</td></tr><tr><td>children</td><td>1.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>6</td></tr><tr><td>Rural</td><td>3</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td>never smoked</td><td>2</td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td>smokes</td><td>1</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_d6297fd789f3be5e2be143738b44ffd2.setContent(html_18a1daed77a8b1f3ae3f3d73cc8bd770);
+            
+        
+
+        marker_cedc44cee954c4ebba0554a8ca6380ba.bindPopup(popup_d6297fd789f3be5e2be143738b44ffd2)
+        ;
+
+        
+    
+    
+            var marker_86b3a5539964ea778a7fc8823dc2a5fe = L.marker(
+                [48.2158036, 16.3993734],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_bbf5877cf081cbaa872f9e0907e5d3ef = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; text-align: center; background-color: #3186cc; color: white; border-radius: 50%; width: 30px; height: 30px; line-height: 30px;\"\u003e20\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_86b3a5539964ea778a7fc8823dc2a5fe.setIcon(div_icon_bbf5877cf081cbaa872f9e0907e5d3ef);
+        
+    
+        var popup_e9bd225f78a2db89c970d95f88fbca2b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4d2963f034fcbbcb503bb16b815f87a9 = $(`<div id="html_4d2963f034fcbbcb503bb16b815f87a9" style="width: 100.0%; height: 100.0%;"><b>Wurstelprater, Vienna, Austria</b><br>Total Stroke Cases at this Place: 13<br><table border='1' style='border-collapse: collapse; width: 100%;'><tr><th>Attribute</th><th>Sub-Category</th><th>Count</th></tr><tr><td rowspan='2'>gender</td><td>Male</td><td>4</td></tr><tr><td>Female</td><td>9</td></tr><tr><td rowspan='2'>hypertension</td><td>0</td><td>8</td></tr><tr><td>1</td><td>5</td></tr><tr><td rowspan='2'>heart_disease</td><td>0</td><td>10</td></tr><tr><td>1</td><td>3</td></tr><tr><td rowspan='2'>ever_married</td><td>No</td><td>1</td></tr><tr><td>Yes</td><td>12</td></tr><tr><td rowspan='5'>work_type</td><td>Govt_job</td><td>1.0</td></tr><tr><td>Self-employed</td><td>4.0</td></tr><tr><td>Private</td><td>8.0</td></tr><tr><td>children</td><td>0.0</td></tr><tr><td>Never_worked</td><td>0.0</td></tr><tr><td rowspan='2'>Residence_type</td><td>Urban</td><td>5</td></tr><tr><td>Rural</td><td>8</td></tr><tr><td rowspan='4'>smoking_status</td><td>Unknown</td><td>4</td></tr><tr><td>never smoked</td><td>3</td></tr><tr><td>formerly smoked</td><td>2</td></tr><tr><td>smokes</td><td>4</td></tr></table><br>Preconditions such as hypertension and heart disease can also influence stroke. Where 0 indicates 'No' and 1 indicates 'Presence or Yes'. Both conditions can aggravate STROKE. <br><br>This Project is dedicated to <b> Mrs. Mitaly Srivastava, </b> my former friend, who is currently a stroke patient in Vienna. May Lord help her in a speedy recovery. <br><br> <b> Disclaimer: </b> This study should be used only for educational purposes without any guarantee on the accuracy of information. This is designed by Dr. Venu Gopal Madhav Annamdas, PhD (NTU Singapore) based on data between 2004-2023 taken from the internet.</div>`)[0];
+                popup_e9bd225f78a2db89c970d95f88fbca2b.setContent(html_4d2963f034fcbbcb503bb16b815f87a9);
+            
+        
+
+        marker_86b3a5539964ea778a7fc8823dc2a5fe.bindPopup(popup_e9bd225f78a2db89c970d95f88fbca2b)
+        ;
+
+        
+    
+    
+            var tile_layer_2bd44fff11039cb8a3f43cfe83aee216 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var layer_control_bfbe34c59ac57277ebb4c31c7e360e4b = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_275107198b7e484cc260767f0ea518c4,
+                    "cartodbpositron" : tile_layer_2bd44fff11039cb8a3f43cfe83aee216,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_bfbe34c59ac57277ebb4c31c7e360e4b.base_layers,
+                layer_control_bfbe34c59ac57277ebb4c31c7e360e4b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+            tile_layer_2bd44fff11039cb8a3f43cfe83aee216.remove();
+        
+    
+            var marker_59a1c1c7fd09461916ea5147eb1c53b0 = L.marker(
+                [48.1965716, 16.3215684],
+                {}
+            ).addTo(map_103de6e2cbe5cc249ca1be3b204c6066);
+        
+    
+            var div_icon_3b27b548f32c145b089d6d49d3c31317 = L.divIcon({"className": "empty", "html": "\n\u003cdiv style=\"position: absolute; bottom: 10px; left: 10px; background-color: pink; padding: 10px; width: 2500%;\"\u003e\n    \u003cp\u003e\u003cb\u003e\u003ch5\u003eWELCOME: Its a awareness webpage on Stroke: \u003c/h5\u003e a dangerous health condition:  LET US PLAY A SMALL GAME... \u003c/b\u003e USE YOUR MOUSE ON SYSTEM OR FINGERS ON MOBILE,.. TRY TO ZOOM IN OR OUT AND FIND NUMBERS FROM 1 TO 20 ! .YOU CAN ALREADY SEE 15....  I HOPE YOU FOUND ALL THE NUMBERS. WOW WONDERFUL ! This page provides data insights of stroke patients in Vienna, Austria - Click on blue Markers (1-20) to know details of Stroke Patient at each famous place in Vienna.  It is important to have awareness of Stroke, which can occur due to multiple reasons including late pregnancies, with pre-existing conditions such as hypertension, heart disease. Occurs when the supply of blood to the brain is reduced or blocked completely, which prevents brain tissue from getting oxygen and nutrients. Urgent medical attention is usually recommended by healthcare providers. It is dangerous and life-threatening. This condition is treatable by a medical professional. However, it can last several years or be lifelong.\u003c/p\u003e\n    \u003cp\u003eThis Project is dedicated to Mrs. Mitaly Srivastava, my former friend, who is a stroke patient in Vienna\u003c/h5\u003e\u003c/p\u003e\n\u003c/div\u003e\n"});
+            marker_59a1c1c7fd09461916ea5147eb1c53b0.setIcon(div_icon_3b27b548f32c145b089d6d49d3c31317);
+        
+</script>
+</html>
